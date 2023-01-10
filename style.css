@@ -81,13 +81,19 @@ h1.title {
     border-bottom: 1px solid #fff;
 }
 
+
 .panel {
     display: none;
     color: #fff;
     animation: panel .3s forwards linear;
 }
-.panel ul{
+
+.panel ul {
     margin-left: 20px;
+}
+
+.panel iframe {
+    width: 100%;
 }
 
 @keyframes panel {
