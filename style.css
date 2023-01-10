@@ -16,7 +16,7 @@ body {
     max-width: 720px;
 }
 
-p {
+p.category {
     color:
         #cdcdcd;
     font-weight: lighter;
@@ -24,7 +24,7 @@ p {
     letter-spacing: 1.5px;
 }
 
-h1 {
+h1.title {
     color: #fff;
     margin-bottom: 10px;
 }
@@ -50,6 +50,19 @@ h1 {
     color: #20FC04;
 }
 
+.buttons {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    padding: 10px 0;
+    margin-bottom: 15px;
+}
+
+.buttons::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
 .button {
     color: #7a7a7c;
     border-bottom: 1px solid #7a7a7c;
@@ -60,10 +73,33 @@ h1 {
     margin-right: 10px;
     font-weight: 400;
     cursor: pointer;
+    transition: all .3s ease;
 }
 
 .button.active {
     color: #fff;
     border-bottom: 1px solid #fff;
-    font-weight: 700;
+}
+
+.panel {
+    display: none;
+    color: #fff;
+    animation: panel .3s forwards linear;
+}
+.panel ul{
+    margin-left: 20px;
+}
+
+@keyframes panel {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.panel.active {
+    display: block;
 }
