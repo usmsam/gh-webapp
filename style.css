@@ -76,8 +76,8 @@ h1.title {
 }
 
 .button.active {
-    color: var(--tg-theme-text-color);
-    border-bottom: 1px solid var(--tg-theme-text-color);
+    color: var(--tg-theme-link-color);
+    border-bottom: 1px solid var(--tg-theme-link-color);
 }
 
 .panel {
