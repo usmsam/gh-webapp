@@ -1,7 +1,7 @@
 ## Mandatory
 
-- [] User verification
+- [ ] User verification
 
 ## Optional
 
-- [] Change webapp title
+- [ ] Change webapp title
