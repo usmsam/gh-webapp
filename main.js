@@ -52,7 +52,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 var player;
 
 function onYouTubePlayerAPIReady() {
-    player = new YT.Player('ytplayer', {
+    player = new YT.Player('youtube-player', {
         height: '360',
         width: '640',
         videoId: '5uZlfK5L0bk'
