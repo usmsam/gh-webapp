@@ -11,21 +11,20 @@ body {
 .app {
     /* width: 720px; */
     height: 1000px;
-    background: #1c1c1c;
+    background: var(--tg-theme-secondary-bg-color);
     padding: 30px 20px 20px;
     max-width: 720px;
 }
 
 p.category {
-    color:
-        #cdcdcd;
+    color: var(--tg-theme-hint-color);
     font-weight: lighter;
     font-size: 14px;
     letter-spacing: 1.5px;
 }
 
 h1.title {
-    color: #fff;
+    color: var(--tg-theme-text-color);
     margin-bottom: 10px;
 }
 
@@ -36,18 +35,18 @@ h1.title {
 .tag {
     padding: 0 20px;
     border-radius: 30px;
-    font-size: 14px;
+    font-size: 18px;
     display: inline-block;
 }
 
 .tag.danger {
     border: 1px solid #e95f5d;
-    color: #e95f5d;
+    color: #e94c49;
 }
 
 .tag.primary {
-    border: 1px solid #20FC04;
-    color: #20FC04;
+    border: 1px solid #21fc04a9;
+    color: #21fc04c0;
 }
 
 .buttons {
@@ -64,8 +63,8 @@ h1.title {
 }
 
 .button {
-    color: #7a7a7c;
-    border-bottom: 1px solid #7a7a7c;
+    color: var(--tg-theme-link-color);
+    border-bottom: 1px solid var(--tg-theme-link-color);
     display: inline-block;
     padding: 0 4px;
     padding-bottom: -3px;
@@ -77,14 +76,13 @@ h1.title {
 }
 
 .button.active {
-    color: #fff;
-    border-bottom: 1px solid #fff;
+    color: var(--tg-theme-text-color);
+    border-bottom: 1px solid var(--tg-theme-text-color);
 }
-
 
 .panel {
     display: none;
-    color: #fff;
+    color: var(--tg-theme-text-color);
     animation: panel .3s forwards linear;
 }
 
@@ -100,7 +98,6 @@ h1.title {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
