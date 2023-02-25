@@ -9,20 +9,22 @@ body {
 }
 
 .app {
-  background: #1c1c1c;
+  /* width: 720px; */
+  /* height: 1000px; */
+  background: var(--tg-theme-bg-color);
   padding: 30px 20px 20px;
   max-width: 720px;
 }
 
 p.category {
-  color: #cdcdcd;
+  color: var(--tg-theme-hint-color);
   font-weight: lighter;
   font-size: 14px;
   letter-spacing: 1.5px;
 }
 
 h1.title {
-  color: #fff;
+  color: var(--tg-theme-text-color);
   margin-bottom: 10px;
 }
 
@@ -33,18 +35,18 @@ h1.title {
 .tag {
   padding: 0 20px;
   border-radius: 30px;
-  font-size: 14px;
+  font-size: 18px;
   display: inline-block;
 }
 
 .tag.danger {
-  border: 1px solid #e95f5d;
-  color: #e95f5d;
+  border: 1px solid #EB4E3D;
+  color: #EB4E3D;
 }
 
 .tag.primary {
-  border: 1px solid #20fc04;
-  color: #20fc04;
+  border: 1px solid #21fc04a9;
+  color: #21fc04c0;
 }
 
 .buttons {
@@ -61,8 +63,8 @@ h1.title {
 }
 
 .button {
-  color: #7a7a7c;
-  border-bottom: 1px solid #7a7a7c;
+  color: var(--tg-theme-link-color);
+  border-bottom: 1px solid var(--tg-theme-link-color);
   display: inline-block;
   padding: 0 4px;
   padding-bottom: -3px;
@@ -70,18 +72,18 @@ h1.title {
   margin-right: 10px;
   font-weight: 400;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 }
 
 .button.active {
-  color: #fff;
-  border-bottom: 1px solid #fff;
+  color: var(--tg-theme-link-color);
+  border-bottom: 1px solid var(--tg-theme-link-color);
 }
 
 .panel {
   display: none;
-  color: #fff;
-  animation: panel 0.3s forwards linear;
+  color: var(--tg-theme-text-color);
+  animation: panel .3s forwards linear;
 }
 
 .panel ul {
@@ -94,16 +96,70 @@ h1.title {
 
 @keyframes panel {
   0% {
-    opacity: 0;
+      opacity: 0;
   }
-
   100% {
-    opacity: 1;
+      opacity: 1;
   }
 }
 
 .panel.active {
   display: block;
+}
+
+.youtube-player {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+  margin: 5px;
+}
+
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  background: transparent;
+}
+
+.youtube-player img {
+  object-fit: cover;
+  display: block;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.youtube-player img:hover {
+  -webkit-filter: brightness(75%);
+}
+
+.youtube-player .play {
+  height: 72px;
+  width: 72px;
+  left: 50%;
+  top: 50%;
+  margin-left: -36px;
+  margin-top: -36px;
+  position: absolute;
+  background: url('//i.imgur.com/TxzC70f.png') no-repeat;
+  cursor: pointer;
 }
 .videoElement {
   margin-bottom: 20px;
